@@ -1,4 +1,4 @@
-# 🚀 Odoy — Real-Time Social Web App
+# ODOY
 
 Odoy is a modern, fast, and clean real-time social platform built with a focus on smooth chat experience, simple UI, and stable performance.  
 It includes real-time messaging, a friend system, and AI-powered responses.  
