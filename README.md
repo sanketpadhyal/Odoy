@@ -4,6 +4,7 @@ Odoy is a modern, fast, and clean real-time social platform built with a focus o
 It includes real-time messaging, a friend system, and AI-powered responses.  
 The goal of this project is to build a minimal yet powerful communication web app from scratch.
 
+>> OPTIMIZED OF MOBILE ONLY (for now).
 ---
 
 ## 🌐 Live Website
