@@ -1,52 +1,64 @@
-# ODOY 👀
+```markdown
+# Odoy 👀
 
-Odoy is a modern, fast, and clean real-time social platform built with a focus on smooth chat experience, simple UI, and stable performance.  
-It includes real-time messaging, a friend system, and AI-powered responses.  
-The goal of this project is to build a minimal yet powerful communication web app from scratch.
+Odoy is a modern, fast, and minimal real-time social platform focused on a smooth chat experience, a simple user interface, and reliable performance. It combines real-time messaging with a lightweight friend system and AI-assisted responses to make everyday conversations easier and more engaging.
 
->> OPTIMIZED OF MOBILE ONLY (for now).
+Note: Mobile-first design (optimized for mobile for now).
+
 ---
 
 ## 🌐 Live Website
-Odoy is live at: **https://odoy.in**  
-You can create an account and **add me there** — my username: **@sanket**
+
+Visit the live app at: https://odoy.in  
+Create an account and add me — username: @sanket
 
 ---
 
-## ✨ Features
-- ⚡ Real-time messaging using Socket.io  
-- 👥 Add / remove friends  
-- 🔍 Search users instantly  
-- 💬 Clean and responsive chat UI  
-- 🚀 Fast backend API with Node.js  
-- 🤖 AI model integration for smart replies  
-- 🔐 Secure user login and data handling  
-- 📱 Fully responsive for mobile and desktop  
+## ✨ Key Features
+
+- ⚡ Real-time messaging powered by Socket.io  
+- 👥 Friend requests and contact management  
+- 🔎 Instant user search and discovery  
+- 💬 Clean, responsive chat UI designed for clarity and speed  
+- 🚀 Fast, RESTful backend API built with Node.js and Express  
+- 🤖 AI-powered smart replies to speed up conversations  
+- 🔐 Secure authentication and data handling  
+- 📱 Responsive across mobile and desktop (mobile-first)
 
 ---
 
 ## 🛠️ Tech Stack
-**Frontend:** React, CSS  
-**Backend:** Node.js, Express  
-**Database:** MongoDB  
-**Real-time Engine:** Socket.io  
-**Hosting:** Render / Vercel  
+
+- Frontend: React, modern CSS  
+- Backend: Node.js, Express  
+- Database: MongoDB  
+- Real-time: Socket.io  
+- Hosting / Deployment: Render / Vercel
 
 ---
 
-## 🧑‍💻 About This Project
-Odoy is being built and improved continuously.  
-More features like media sharing, profile customization, and a better AI engine will be added soon.  
-This project helped me improve my full-stack development skills in a real working environment.
+## 🧭 Roadmap & Project Status
+
+Odoy is actively developed and iterated. Short-term priorities include:
+
+- Media sharing (images, audio, video)  
+- Profile customization and presence indicators  
+- Improved AI models for richer, context-aware replies  
+- Performance and reliability improvements for scaling
+
+This project is a hands-on exercise in full-stack development and real-time systems engineering.
 
 ---
 
-## 👤 Founder & Developer
-**Sanket Padhyal**  
-GitHub: **@sanketpadhyal**
+## 👤 Founder & Maintainer
+
+Sanket Padhyal  
+GitHub: @sanketpadhyal
 
 ---
 
 ## 📄 License
-All rights reserved © 2025  
-Odoy — Created and maintained by **@sanketpadhyal**
+
+All rights reserved © 2025 — Odoy  
+Created and maintained by @sanketpadhyal
+```
