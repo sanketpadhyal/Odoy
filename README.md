@@ -1,4 +1,4 @@
-# Odoy 👀
+## Odoy 👀
 
 Odoy is a modern, fast, and minimal real-time social platform focused on a smooth chat experience, a simple user interface, and reliable performance. It combines real-time messaging with a lightweight friend system and AI-assisted responses to make everyday conversations easier and more engaging.
 
@@ -49,7 +49,7 @@ This project is a hands-on exercise in full-stack development and real-time syst
 
 ---
 
-## 👤 Founder & Maintainer
+## 👤 Founder & Developer
 
 Sanket Padhyal  
 GitHub: @sanketpadhyal
@@ -60,4 +60,5 @@ GitHub: @sanketpadhyal
 
 All rights reserved © 2025 — Odoy  
 Created and maintained by @sanketpadhyal
-```
+
+----
