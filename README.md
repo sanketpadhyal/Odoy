@@ -1,4 +1,3 @@
-```markdown
 # Odoy 👀
 
 Odoy is a modern, fast, and minimal real-time social platform focused on a smooth chat experience, a simple user interface, and reliable performance. It combines real-time messaging with a lightweight friend system and AI-assisted responses to make everyday conversations easier and more engaging.
