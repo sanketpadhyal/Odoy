@@ -30,9 +30,9 @@ Create an account and add me — username: @sanket
 
 - Frontend: React, modern CSS  
 - Backend: Node.js, Express  
-- Database: MongoDB  
+- Database: MongoDB  (Facing High Load Time) Soon We'll Shift On MySQL.
 - Real-time: Socket.io  
-- Hosting / Deployment: Render / Vercel
+- Hosting / Deployment: FRONTEND = NETLIFY, BACKEND = RENDER.
 
 ---
 
