@@ -1,4 +1,5 @@
-## Odoy 👀
+## ODOY   
+<img src="./logo.png" alt="Odoy Logo" width="55" />
 
 Odoy is a modern, fast, and minimal real-time social platform focused on a smooth chat experience, a simple user interface, and reliable performance. It combines real-time messaging with a lightweight friend system and AI-assisted responses to make everyday conversations easier and more engaging.
 
@@ -28,11 +29,13 @@ Create an account and add me — username: @sanket
 
 ## 🛠️ Tech Stack
 
-- Frontend: React, modern CSS  
-- Backend: Node.js, Express  
-- Database: MongoDB  (Facing High Load Time) Soon We'll Shift On MySQL.
-- Real-time: Socket.io  
-- Hosting / Deployment: FRONTEND = NETLIFY, BACKEND = RENDER.
+- **Frontend:** React, modern CSS  
+- **Backend:** Node.js, Express  
+- **Database:** MongoDB (Facing high load time — planning migration to MySQL)  
+- **Real-time:** Socket.io  
+- **Hosting / Deployment:**  
+  - FRONTEND → Netlify  
+  - BACKEND → Render  
 
 ---
 
@@ -43,7 +46,7 @@ Odoy is actively developed and iterated. Short-term priorities include:
 - Media sharing (images, audio, video)  
 - Profile customization and presence indicators  
 - Improved AI models for richer, context-aware replies  
-- Performance and reliability improvements for scaling
+- Performance and reliability improvements for scaling  
 
 This project is a hands-on exercise in full-stack development and real-time systems engineering.
 
@@ -51,14 +54,12 @@ This project is a hands-on exercise in full-stack development and real-time syst
 
 ## 👤 Founder & Developer
 
-Sanket Padhyal  
+**Sanket Padhyal**  
 GitHub: @sanketpadhyal
 
 ---
 
 ## 📄 License
 
-All rights reserved © 2025 — Odoy  
+All rights reserved © 2025 — **Odoy**  
 Created and maintained by @sanketpadhyal
-
-----
