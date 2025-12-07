@@ -9,7 +9,7 @@ Note: Mobile-first design (optimized for mobile for now).
 
 ## 🌐 Live Website
 
-Visit the live app at: https://odoy.in  
+Visit the live app at: www.odoy.in  
 Create an account and add me — username: @sanket
 
 ---
