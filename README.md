@@ -5,6 +5,8 @@ Odoy is a modern, fast, and minimal real-time social platform focused on a smoot
 
 Note: Mobile-first design (optimized for mobile for now).
 
+> Facing slow loading times due to server issues. Working on a resolution.
+
 ---
 
 ## 🌐 Live Website
