@@ -26,7 +26,7 @@ Create an account and add me — username: @sanket
 - 🤖 AI-powered smart replies to speed up conversations  
 - 🔐 Secure authentication and data handling  
 - 📱 Responsive across mobile and desktop (mobile-first)
-
+- ⭐ We’ve added a Star Friends feature recently. It may have a few bugs right now — please avoid heavy use. Fixes are coming very soon.
 ---
 
 ## 🛠️ Tech Stack
