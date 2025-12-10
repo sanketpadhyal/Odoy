@@ -38,6 +38,7 @@ Create an account and add me — **@sanket**
 - **Hosting & Deployment:**  
   - Frontend → Netlify  
   - Backend → Render  
+- **AUTH:** Firebase Auth
 
 > 🔥 Firestore integration has significantly improved speed, reliability, and performance—even on slower networks.
 
