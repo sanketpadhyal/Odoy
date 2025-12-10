@@ -34,7 +34,7 @@ Create an account and add me — **@sanket**
 - **Frontend:** React, modern CSS  
 - **Backend:** Node.js, Express  
 - **Database:** Firebase Firestore (high-speed, real-time, scalable)  
-- **Real-time:** Socket.io (was using earlier now replaced by firestore)
+- **Real-time:** ~Socket.io~ (was using earlier now replaced by firestore)
 - **Hosting & Deployment:**  
   - Frontend → Netlify  
   - Backend → Render  
