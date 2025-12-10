@@ -11,7 +11,7 @@
 
 ## 🌐 Live Website
 
-Visit the live app: **https://www.odoy.in**  
+Visit the live app: **www.odoy.in**  
 Create an account and add me — **@sanket**
 
 ---
