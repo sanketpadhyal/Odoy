@@ -1,68 +1,69 @@
-## ODOY   
+## ODOY  
 <img src="./logo.png" alt="Odoy Logo" width="55" />
 
-Odoy is a modern, fast, and minimal real-time social platform focused on a smooth chat experience, a simple user interface, and reliable performance. It combines real-time messaging with a lightweight friend system and AI-assisted responses to make everyday conversations easier and more engaging.
+**Odoy** is a modern, fast, and minimal real-time social platform built for smooth conversations, a clean user experience, and reliable performance. It combines real-time messaging, a lightweight friend system, and AI-assisted replies to make everyday chatting simple, quick, and engaging.
 
-Note: Mobile-first design (optimized for mobile for now).
+> 📱 Mobile-first design — currently optimized for mobile devices.
 
-> Facing slow loading times due to server issues. Working on a resolution.
->> NEW UPDATE : FIRESTORE IS INTEGRATED IN ODOY FOR SMOOTH, RAPID AND TRANSPARENT LOAD.
+✅ **New Update:** Odoy is now fully integrated with **Firebase Firestore**, delivering **rapid load times**, **real-time sync**, and **excellent performance even on slow internet connections**.
+
 ---
 
 ## 🌐 Live Website
 
-Visit the live app at: www.odoy.in  
-Create an account and add me — username: @sanket
+Visit the live app: **https://www.odoy.in**  
+Create an account and add me — **@sanket**
 
 ---
 
 ## ✨ Key Features
 
-- ⚡ Real-time messaging powered by Socket.io  
+- ⚡ Real-time messaging with instant delivery  
 - 👥 Friend requests and contact management  
-- 🔎 Instant user search and discovery  
-- 💬 Clean, responsive chat UI designed for clarity and speed  
-- 🚀 Fast, RESTful backend API built with Node.js and Express  
-- 🤖 AI-powered smart replies to speed up conversations  
+- 🔎 Fast user search and discovery  
+- 💬 Minimal, clean, and responsive chat UI  
+- 🤖 AI-powered smart replies for quicker conversations  
 - 🔐 Secure authentication and data handling  
-- 📱 Responsive across mobile and desktop (mobile-first)
-- ⭐ We’ve added a Star Friends feature recently. It may have a few bugs right now — please avoid heavy use. Fixes are coming very soon.
+- 📱 Mobile-first, responsive design  
+- ⭐ Star Friends feature (currently in beta — minor bugs expected)
+
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, modern CSS  
 - **Backend:** Node.js, Express  
-- **Database:** MongoDB (Facing high load time — planning migration to MySQL)
- >> FOR DATABSE NEW INTEGRATION HAS BEEN DONE WE ARE USING FIRESTORE. 
-- **Real-time:** Socket.io  
-- **Hosting / Deployment:**  
-  - FRONTEND → Netlify  
-  - BACKEND → Render  
+- **Database:** Firebase Firestore (high-speed, real-time, scalable)  
+- **Real-time:** Socket.io (was using earlier now replaced by firestore)
+- **Hosting & Deployment:**  
+  - Frontend → Netlify  
+  - Backend → Render  
+
+> 🔥 Firestore integration has significantly improved speed, reliability, and performance—even on slower networks.
 
 ---
 
 ## 🧭 Roadmap & Project Status
 
-Odoy is actively developed and iterated. Short-term priorities include:
+Odoy is under active development. Upcoming improvements include:
 
-- Media sharing (images, audio, video)  
-- Profile customization and presence indicators  
-- Improved AI models for richer, context-aware replies  
-- Performance and reliability improvements for scaling  
+- Media sharing (images only)  
+- Profile customization and online presence indicators  
+- Smarter, more context-aware AI responses  
+- Performance optimizations for large-scale usage  
 
-This project is a hands-on exercise in full-stack development and real-time systems engineering.
+This project serves as a hands-on exploration of full-stack development and real-time system architecture.
 
 ---
 
 ## 👤 Founder & Developer
 
 **Sanket Padhyal**  
-GitHub: @sanketpadhyal
+GitHub: **@sanketpadhyal**
 
 ---
 
 ## 📄 License
 
 All rights reserved © 2025 — **Odoy**  
-Created and maintained by @sanketpadhyal
+Created and maintained by **@sanketpadhyal**
