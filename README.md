@@ -1,7 +1,7 @@
 ## ODOY  
 <img src="./logo.png" alt="Odoy Logo" width="55" />
 
-**Odoy** is a modern, fast, and minimal real-time social platform built for smooth conversations, a clean user experience, and reliable performance. It combines real-time messaging, a lightweight friend system, and AI-assisted replies to make everyday chatting simple, quick, and engaging.
+**Odoy** is a modern, fast, and minimal real-time social platform built for smooth conversations, a clean user experience, and reliable performance. It combines real-time messaging, a lightweight friend system, and a minimal, distraction-free chat interface.
 
 > 📱 Mobile-first design — currently optimized for mobile devices.  
 > ⚡ The web app is now **super fast** with major UI and performance upgrades.
@@ -41,10 +41,11 @@ Create an account and add me — **@sanket**
 - 👥 Friend requests, contacts, and Star Friends (beta)  
 - 🔎 Fast user search and discovery  
 - 💬 Clean and responsive chat UI  
-- 🤖 AI-powered smart replies  
 - 🔐 Secure Firebase Authentication  
 - 📱 Mobile-first, minimalistic interface  
 - 🛡️ NEW: Privacy controls (Hide DP, Hide Name, Last Seen Off, Read Receipts Off)
+
+> 🧠 **AI-based features are not added yet — currently in planning & development.**
 
 ---
 
@@ -69,7 +70,7 @@ Odoy is under active development. Upcoming features:
 
 - 📸 Media sharing (images)  
 - 👤 Profile customization + online status  
-- 🧠 Smarter, context-aware AI replies  
+- 🧠 AI features — smart replies & suggestions *(planning stage)*  
 - ⚡ Further performance improvements for scalability  
 
 This project is a real-world learning experience in full-stack and real-time systems.
