@@ -3,9 +3,28 @@
 
 **Odoy** is a modern, fast, and minimal real-time social platform built for smooth conversations, a clean user experience, and reliable performance. It combines real-time messaging, a lightweight friend system, and AI-assisted replies to make everyday chatting simple, quick, and engaging.
 
-> 📱 Mobile-first design — currently optimized for mobile devices.
+> 📱 Mobile-first design — currently optimized for mobile devices.  
+> ⚡ The web app is now **super fast** with major UI and performance upgrades.
 
-✅ **New Update:** Odoy is now fully integrated with **Firebase Firestore**, delivering **rapid load times**, **real-time sync**, and **excellent performance even on slow internet connections**.
+---
+
+## 🚀 Latest Update (NEW)
+
+Odoy introduces **premium-style privacy options** (currently in trial mode):
+
+- 🖼️ **Hide My Profile Picture**  
+- 🙈 **Hide My Name**  
+- ⏱️ **Last Seen Off**  
+- ✔️ **Hide Read Receipts**  
+- ⭐ Optimized chat performance — messages load instantly  
+- ⚡ Web version now feels **2× faster** with new caching + Firestore sync  
+
+Odoy is now fully powered by **Firebase Firestore**, giving you:
+
+- Ultra-fast load times  
+- Real-time sync  
+- Smooth performance even on slow networks  
+- Zero lag in messaging  
 
 ---
 
@@ -19,13 +38,13 @@ Create an account and add me — **@sanket**
 ## ✨ Key Features
 
 - ⚡ Real-time messaging with instant delivery  
-- 👥 Friend requests and contact management  
+- 👥 Friend requests, contacts, and Star Friends (beta)  
 - 🔎 Fast user search and discovery  
-- 💬 Minimal, clean, and responsive chat UI  
-- 🤖 AI-powered smart replies for quicker conversations  
-- 🔐 Secure authentication and data handling  
-- 📱 Mobile-first, responsive design  
-- ⭐ Star Friends feature (currently in beta — minor bugs expected)
+- 💬 Clean and responsive chat UI  
+- 🤖 AI-powered smart replies  
+- 🔐 Secure Firebase Authentication  
+- 📱 Mobile-first, minimalistic interface  
+- 🛡️ NEW: Privacy controls (Hide DP, Hide Name, Last Seen Off, Read Receipts Off)
 
 ---
 
@@ -33,27 +52,27 @@ Create an account and add me — **@sanket**
 
 - **Frontend:** React, modern CSS  
 - **Backend:** Node.js, Express  
-- **Database:** Firebase Firestore (high-speed, real-time, scalable)  
-- **Real-time:** ~Socket.io~ (was using earlier now replaced by firestore)
-- **Hosting & Deployment:**  
+- **Database:** Firebase Firestore (real-time, high-speed)  
+- **Real-time:** ~Socket.io~ → **Upgraded to Firestore real-time listeners**  
+- **Hosting:**  
   - Frontend → Netlify  
   - Backend → Render  
-- **AUTH:** Firebase Auth
+- **Auth:** Firebase Authentication
 
-> 🔥 Firestore integration has significantly improved speed, reliability, and performance—even on slower networks.
+> 🔥 Firestore integration dramatically improves speed, reliability, and chat performance.
 
 ---
 
 ## 🧭 Roadmap & Project Status
 
-Odoy is under active development. Upcoming improvements include:
+Odoy is under active development. Upcoming features:
 
-- Media sharing (images only)  
-- Profile customization and online presence indicators  
-- Smarter, more context-aware AI responses  
-- Performance optimizations for large-scale usage  
+- 📸 Media sharing (images)  
+- 👤 Profile customization + online status  
+- 🧠 Smarter, context-aware AI replies  
+- ⚡ Further performance improvements for scalability  
 
-This project serves as a hands-on exploration of full-stack development and real-time system architecture.
+This project is a real-world learning experience in full-stack and real-time systems.
 
 ---
 
