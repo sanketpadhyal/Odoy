@@ -19,7 +19,7 @@ Odoy introduces **premium-style privacy options** (currently in trial mode):
 - ⭐ Optimized chat performance — messages load instantly  
 - ⚡ Web version now feels **2× faster** with new caching + Firestore sync  
 - 👑 Premium Badge For Premium Users ( CURRENTLY UNDER DEVELOPMENT AND WILL BE "FREE".)
-- Odoy is now fully powered by **Firebase Firestore**, giving you:
+>> Odoy is now fully powered by **Firebase Firestore**, giving you:
 1. Ultra-fast load times  
 2. Real-time sync  
 3. Smooth performance even on slow networks  
