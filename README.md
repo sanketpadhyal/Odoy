@@ -23,7 +23,9 @@ Odoy introduces **premium-style privacy options** (currently in trial mode):
 1. Ultra-fast load times  
 2. Real-time sync  
 3. Smooth performance even on slow networks  
-4. Zero lag in messaging  
+4. Zero lag in messaging
+
+- working on session management feature!!!
 
 ---
 
