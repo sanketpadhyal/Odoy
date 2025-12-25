@@ -78,6 +78,7 @@ Odoy is under active development. Upcoming features:
 
 This project is a real-world learning experience in full-stack and real-time systems.
 
+>> ODOY SUCCESSFULLY COMPLETED 110 USERS 🤌🏻❤️‍🩹
 ---
 
 ## 👤 Founder & Developer
