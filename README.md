@@ -3,6 +3,8 @@
     <img src="./logo.png" alt="ODOY LOGO" width="55" />
 </a>
 
+>> FIXING DB ISSUE 
+
 **Odoy** is a modern, fast, and minimal real-time social platform built for smooth conversations, a clean user experience, and reliable performance. It combines real-time messaging, a lightweight friend system, and a minimal, distraction-free chat interface.
 
 > 📱 Mobile-first design — currently optimized for mobile devices.  
