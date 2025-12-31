@@ -3,12 +3,15 @@
     <img src="./logo.png" alt="ODOY LOGO" width="55" />
 </a>
 
->> FIXING DB ISSUE 
+> ✅ **Status:** The Odoy web app is working perfectly.  
+> All systems are stable and there are no known issues at the moment.
+
+---
 
 **Odoy** is a modern, fast, and minimal real-time social platform built for smooth conversations, a clean user experience, and reliable performance. It combines real-time messaging, a lightweight friend system, and a minimal, distraction-free chat interface.
 
 > 📱 Mobile-first design — currently optimized for mobile devices.  
-> ⚡ The web app is now **super fast** with major UI and performance upgrades.
+> ⚡ The web app is **super fast** with major UI and performance upgrades.
 
 ---
 
@@ -21,21 +24,25 @@ Odoy introduces **premium-style privacy options** (currently in trial mode):
 - ⏱️ **Last Seen Off**  
 - ✔️ **Hide Read Receipts**  
 - ⭐ Optimized chat performance — messages load instantly  
-- ⚡ Web version now feels **2× faster** with new caching + Firestore sync  
-- 👑 Premium Badge For Premium Users ( CURRENTLY UNDER DEVELOPMENT AND WILL BE "FREE".)
->> Odoy is now fully powered by **Firebase Firestore**, giving you:
+- ⚡ Web version now feels **2× faster** with caching + Firestore sync  
+- 👑 Premium Badge for Premium Users  
+  *(currently under development and will be **FREE**)*
+
+### 🔥 Powered by Firebase Firestore
+Odoy is now fully powered by **Firebase Firestore**, providing:
+
 1. Ultra-fast load times  
-2. Real-time sync  
+2. Real-time synchronization  
 3. Smooth performance even on slow networks  
 4. Zero lag in messaging
 
-- working on session management feature!!!
+- 🔐 Session management feature — **in progress**
 
 ---
 
 ## 🌐 Live Website
 
-Visit the live app: **www.odoy.in**  
+Visit the live app: **https://www.odoy.in**  
 Create an account and add me — **@sanket**
 
 ---
@@ -48,9 +55,13 @@ Create an account and add me — **@sanket**
 - 💬 Clean and responsive chat UI  
 - 🔐 Secure Firebase Authentication  
 - 📱 Mobile-first, minimalistic interface  
-- 🛡️ NEW: Privacy controls (Hide DP, Hide Name, Last Seen Off, Read Receipts Off)
+- 🛡️ Privacy controls  
+  - Hide DP  
+  - Hide Name  
+  - Last Seen Off  
+  - Read Receipts Off  
 
-> 🧠 **AI-based features are not added yet — currently in planning & development.**
+> 🧠 **AI-based features are not added yet** — currently in planning & development.
 
 ---
 
@@ -59,11 +70,11 @@ Create an account and add me — **@sanket**
 - **Frontend:** React, modern CSS  
 - **Backend:** Node.js, Express  
 - **Database:** Firebase Firestore (real-time, high-speed)  
-- **Real-time:** ~Socket.io~ → **Upgraded to Firestore real-time listeners**  
+- **Real-time:** Socket.io → **Upgraded to Firestore real-time listeners**  
 - **Hosting:**  
   - Frontend → Netlify  
   - Backend → Render  
-- **Auth:** Firebase Authentication
+- **Auth:** Firebase Authentication  
 
 > 🔥 Firestore integration dramatically improves speed, reliability, and chat performance.
 
@@ -71,7 +82,7 @@ Create an account and add me — **@sanket**
 
 ## 🧭 Roadmap & Project Status
 
-Odoy is under active development. Upcoming features:
+Odoy is under active development. Upcoming features include:
 
 - 📸 Media sharing (images)  
 - 👤 Profile customization + online status  
@@ -80,7 +91,8 @@ Odoy is under active development. Upcoming features:
 
 This project is a real-world learning experience in full-stack and real-time systems.
 
->> ODOY SUCCESSFULLY COMPLETED 110 USERS 🤌🏻❤️‍🩹
+> 🎉 **ODOY HAS SUCCESSFULLY REACHED 110 USERS** 🤌🏻❤️‍🩹
+
 ---
 
 ## 👤 Founder & Developer
