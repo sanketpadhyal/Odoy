@@ -1,0 +1,761 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.myf-page {
+  padding-top: 110px;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.myf-animate {
+  animation: myfSlideUp 0.45s ease both;
+}
+
+@keyframes myfSlideUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.myf-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0 26px;
+}
+
+/* MAIN WORD */
+.myf-title-maiin {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.4px;
+}
+
+/* ACCENT WORD (PILL STYLE) */
+.myf-title-subb {
+  font-size: 38px;
+  font-weight: 800;
+  padding: 3px 14px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #ffffff;
+  letter-spacing: -0.4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.myf-title-subb:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+/* DARK MODE HANDLED BY VARIABLES AUTOMATICALLY */
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .myf-title-maiin,
+  .myf-title-subb {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 360px) {
+  .myf-title-maiin,
+  .myf-title-subb {
+    font-size: 30px;
+  }
+}
+
+
+.my-back-btn {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0 0 16px 5%;
+  padding: 10px 14px;
+
+  font-size: 16.5px;
+  font-weight: 600;
+  color: var(--text);
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow: 0 4px 14px var(--shadow);
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.my-back-btn:hover {
+  color: var(--accent);
+  transform: translateX(-4px);
+}
+
+.my-back-btn svg {
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+body.dark .my-back-btn {
+  background: #101010;          /* deep black */
+  border: 1px solid #1a1a1a;     /* subtle edge */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.85);
+  color: #f5f5f5;
+}
+
+body.dark .my-back-btn:hover {
+
+  color: var(--accent);
+}
+
+/* ===============================
+   FRIEND PROFILE PAGE
+================================ */
+
+.friend-profile-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 110px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===============================
+   PROFILE CARD
+================================ */
+
+.friend-profile-card {
+  width: 92%;
+  max-width: 520px;
+  margin-top: 20px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+
+  padding: 28px 22px;
+  box-shadow: 0 10px 28px var(--shadow);
+
+  position: relative;
+}
+
+/* ===============================
+   PROFILE PHOTO – PERFECT CENTER ✅
+================================ */
+
+.friend-profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  display: block;        /* ✅ important */
+  margin: 24px auto 16px; /* ✅ true center */
+
+  border: 4px solid var(--accent);
+}
+
+
+body.dark .friend-profile-card {
+  background: #151515;
+  border-color: #1a1a1a;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.85);
+}
+
+/* ===============================
+   BACK BUTTON ✅
+================================ */
+
+.profile-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  background: var(--card-bg);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 14px var(--shadow);
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.profile-back:hover {
+  color: var(--accent);
+  transform: translateX(-3px);
+}
+
+body.dark .profile-back {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+/* ===============================
+   PROFILE PHOTO
+================================ */
+
+.friend-profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+
+  border: 4px solid var(--accent);
+}
+
+/* ===============================
+   INFO BOX ✅ VALUE SHIFT
+================================ */
+
+.friend-profile-info {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ✅ Grid = perfect alignment */
+.friend-info-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;   /* label | value */
+  column-gap: 16px;                  /* ✅ right shift */
+
+  background: rgba(0,0,0,0.03);
+  padding: 12px 14px;
+  border-radius: 14px;
+
+  font-size: 15px;
+}
+
+body.dark .friend-info-row {
+  background: #121212;
+}
+
+/* LABEL */
+.friend-info-row span {
+  font-weight: 700;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+/* VALUE (Username, Name, etc.) */
+.friend-info-row p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--subtext);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+/* ===============================
+   LOADER
+================================ */
+
+.friend-profile-card .myf-loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+.slide-up-in {
+  animation: slideUpProfile 0.35s ease both;
+}
+
+@keyframes slideUpProfile {
+  from { opacity: 0; transform: translateY(35px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-down-out {
+  animation: slideDownProfile 0.35s ease forwards;
+}
+
+@keyframes slideDownProfile {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(40px); }
+}
+
+/* ===============================
+   MOBILE OPTIMIZATION ✅
+================================ */
+
+@media (max-width: 420px) {
+  .profile-back {
+    top: 12px;
+    left: 12px;
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  .friend-info-row {
+    grid-template-columns: 78px 1fr;
+    column-gap: 12px;
+  }
+
+  .friend-profile-photo {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+
+/* ===============================
+   DELETE FRIEND MODAL
+================================ */
+
+.myf-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeInOverlay 0.25s ease;
+}
+
+/* MODAL BOX */
+.myf-modal {
+  width: 92%;
+  max-width: 380px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px 22px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  animation: modalPop 0.28s ease;
+}
+
+/* DARK MODE */
+body.dark .myf-modal {
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+/* TITLE */
+.myf-modal h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* TEXT */
+.myf-modal p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+body.dark .myf-modal p {
+  color: #ccc;
+}
+
+/* ACTIONS */
+.myf-modal-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+/* CANCEL BUTTON */
+.myf-cancel-btn {
+  flex: 1;
+  padding: 11px 0;
+  border-radius: 14px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e5e7eb;
+  color: #111;
+  transition: 0.25s;
+}
+
+.myf-cancel-btn:hover:not(:disabled) {
+  background: #d1d5db;
+}
+
+body.dark .myf-cancel-btn {
+  background: #2b2b2e;
+  color: #fff;
+}
+
+body.dark .myf-cancel-btn:hover:not(:disabled) {
+  background: #3a3a3d;
+}
+
+/* DELETE BUTTON */
+.myf-delete-btn {
+  flex: 1;
+  padding: 11px 0;
+  border-radius: 14px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #ef4444;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.myf-delete-btn:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+/* DISABLED (Deleting...) */
+.myf-delete-btn:disabled,
+.myf-cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+   MOBILE TWEAK
+================================ */
+
+@media (max-width: 400px) {
+  .myf-modal {
+    padding: 20px 18px;
+  }
+}
+
+
+/* TITLE */
+.myf-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 20px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.myf-title-main,
+.myf-title-sub {
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.myf-title-main {
+  background: linear-gradient(90deg, #111, #333);
+}
+
+.myf-title-sub {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+}
+
+body.dark .myf-title-main {
+  background: linear-gradient(90deg, #fff, #d4d4d4);
+}
+
+body.dark .myf-title-sub {
+  background: linear-gradient(90deg, #4ade80, #86efac);
+}
+
+/* FRIEND LIST */
+.myf-list {
+  width: 92%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* FRIEND CARD */
+.myf-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+}
+
+body.dark .myf-card {
+  background: #1f1f21;
+  color: #fff;
+}
+
+.myf-card:hover { transform: translateY(-3px); }
+
+/* PHOTO */
+.myf-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c3e6cb;
+}
+
+/* INFO */
+.myf-info {
+  flex: 1;
+  text-align: left;
+  margin-left: 14px;
+}
+
+.myf-info h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.myf-username {
+  font-size: 0.85rem;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+body.dark .myf-username {
+  color: #4ade80;
+}
+
+/* THREE DOTS BUTTON */
+.myf-menu-btn {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.myf-menu-btn:hover {
+  background: rgba(0,0,0,0.06);
+}
+
+body.dark .myf-menu-btn:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* POPUP MENU */
+.myf-menu-popup {
+  position: absolute;
+  bottom: calc(100% - 19px);
+  right: 0;
+  width: 150px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px 0;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  animation: menuSlideUp 0.22s ease;
+  transform-origin: bottom right;
+  z-index: 9999;
+}
+
+@keyframes menuSlideUp {
+  from { opacity: 0; transform: translateY(10px) scale(0.94); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+body.dark .myf-menu-popup {
+  background: #2a2a2c;
+}
+
+.myf-menu-popup p {
+  margin: 0;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.delete-option { color: #e11d48; }
+
+/* EMPTY */
+.myf-empty {
+  margin-top: 20px;
+  color: #444;
+}
+
+body.dark .myf-empty { color: #ccc; }
+
+/* ======================================================
+   ✅ SKELETON LOADING (ONLY ADDITION — SAFE)
+====================================================== */
+
+.myf-card.skeleton {
+  pointer-events: none;
+}
+
+.sk-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    #eaeaea 25%,
+    #f5f5f5 37%,
+    #eaeaea 63%
+  );
+  background-size: 400% 100%;
+  animation: skMove 1.4s ease infinite;
+}
+
+.sk-info {
+  flex: 1;
+  margin-left: 14px;
+}
+
+.sk-line {
+  height: 14px;
+  width: 75%;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #eaeaea 25%,
+    #f5f5f5 37%,
+    #eaeaea 63%
+  );
+  background-size: 400% 100%;
+  animation: skMove 1.4s ease infinite;
+  margin-bottom: 8px;
+}
+
+.sk-line.short { width: 45%; }
+
+@keyframes skMove {
+  from { background-position: 100% 0; }
+  to   { background-position: -100% 0; }
+}
+
+body.dark .sk-avatar,
+body.dark .sk-line {
+  background: linear-gradient(
+    90deg,
+    #2a2a2a 25%,
+    #3a3a3a 37%,
+    #2a2a2a 63%
+  );
+  background-size: 400% 100%;
+}
+
+/* ======================================================
+   FRIEND PROFILE VIEW (UNCHANGED)
+====================================================== */
+
+.friend-profile-page {
+  padding-top: 110px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friend-profile-card {
+  width: 92%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 26px 22px;
+  margin-top: 25px;
+}
+
+body.dark .friend-profile-card {
+  background: #121212e7;
+  color: #fff;
+}
+
+.slide-up-in {
+  animation: slideUpIn 0.35s ease both;
+}
+
+@keyframes slideUpIn {
+  from { opacity: 0; transform: translateY(35px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-down-out {
+  animation: slideDownOut 0.35s ease forwards;
+}
+
+@keyframes slideDownOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(40px); }
+}
+
+/* ===============================
+   USERNAME ROW – SIMPLE DIFFERENT LOOK ✅
+================================ */
+
+.friend-profile-info .friend-info-row:nth-child(2) {
+  border: 1px solid var(--accent);   /* thin blue border */
+  background: transparent;
+
+  transform: translateY(-2px);       /* slightly up */
+}
+
+/* Dark mode option */
+body.dark
+.friend-profile-info
+.friend-info-row:nth-child(2) {
+  border-color: var(--accent);
+  background: transparent;
+}
+/* Slight right shift for @username text ONLY */
+.friend-profile-info .friend-info-row:nth-child(2) p {
+  padding-left: 12px;   /* 👈 move @username slightly right */
+}

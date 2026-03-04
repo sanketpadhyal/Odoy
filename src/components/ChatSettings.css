@@ -1,0 +1,257 @@
+.chatsettings-page {
+  padding-top: 110px;
+  padding-bottom: 80px;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+}
+
+.settings-top-row {
+  width: 92%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.settings-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.settings-back-btn:hover {
+  transform: translateX(-4px);
+  color: var(--accent);
+}
+
+.settings-back-icon {
+  font-size: 20px;
+}
+
+.settings-title {
+  margin: 18px 0 28px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.settings-title-sub {
+  font-size: 2.3rem;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #fff;
+}
+
+.settings-list {
+  width: 92%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settings-card {
+  padding: 15px 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 4px 14px var(--shadow);
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+}
+
+.settings-card svg {
+  font-size: 20px !important;
+}
+
+.settings-card p {
+  margin-left: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.s-left {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  width: 42px;
+  height: 20px;
+  border-radius: 20px;
+  background: #cfcfcf;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+.toggle.on {
+  background: var(--accent);
+}
+
+.toggle .circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.25s ease;
+}
+
+.toggle.on .circle {
+  left: 24px;
+}
+
+body.dark .settings-card {
+  background: #1f1f21;
+  border-color: #2a2a2c;
+}
+
+@media (max-width: 450px) {
+  .settings-title-sub {
+    font-size: 2rem;
+  }
+
+  .settings-card {
+    padding: 14px;
+  }
+
+  .settings-card p {
+    font-size: 0.9rem;
+  }
+}
+
+.settings-sub-btn {
+  width: 92%;
+  max-width: 520px;
+  margin: -6px auto 10px;
+  padding: 10px 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  font-size: 0.82rem;
+  color: var(--subtext);
+  opacity: 0.8;
+  box-shadow: 0 3px 8px var(--shadow);
+}
+
+body.dark .settings-sub-btn {
+  background: #1a1a1a;
+  border-color: #2a2a2c;
+  opacity: 0.85;
+}
+
+.settings-footer {
+  text-align: center;
+  margin: 28px 0 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--subtext);
+  opacity: 0.7;
+  padding: 12px 0;
+  border-radius: 14px;
+  width: 92%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px var(--shadow);
+  animation: fadeInUp 0.4s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.settings-footer:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+body.dark .settings-footer {
+  background: #1e1e20;
+  border-color: #2a2a2c;
+  color: #cfcfcf;
+}
+
+.settings-premium-line {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 0;
+  margin-top: -5px;
+  color: #444;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+body.dark .settings-premium-line {
+  color: #ccc;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  opacity: 0.9;
+}
+
+.clean-icon {
+  transition: 0.3s ease;
+}
+
+.settings-card:hover .clean-icon {
+  transform: scale(1.1);
+}
+
+.loader360 {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top: 2px solid var(--accent);
+  border-radius: 50%;
+  animation: spin360 0.7s linear infinite;
+  margin-right: 10px;
+}
+
+body.dark .loader360 {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid var(--accent);
+}
+
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

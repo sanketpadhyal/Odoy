@@ -1,0 +1,365 @@
+/* ---------------------------------------------------------
+   ROOT COLORS (Light & Dark)
+--------------------------------------------------------- */
+:root {
+  --bg: #f7f8fa;
+  --text: #111;
+  --card: #ffffff;
+  --card-dark: #161617;
+  --shadow: rgba(0,0,0,0.08);
+  --shadow-dark: rgba(0,0,0,0.7);
+
+  --primary: #6c63ff;
+  --primary2: #4b6bff;
+  --danger: #ff4d4f;
+  --cancel: #ffaa22;
+}
+
+/* Dark Theme */
+body.dark {
+  --bg: #0b0c0e;
+  --text: #f5f5f5;
+  --card: var(--card-dark);
+  --shadow: var(--shadow-dark);
+}
+
+/* ---------------------------------------------------------
+   PAGE
+--------------------------------------------------------- */
+.request-page {
+  padding-top: calc(env(safe-area-inset-top, 40px) + 120px);
+  padding-bottom: calc(env(safe-area-inset-bottom, 20px) + 20px);
+  background: var(--bg);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInPage 0.38s ease;
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------------------------------------
+   CARD CONTAINER
+--------------------------------------------------------- */
+.request-page > *:not(.loader-wrap) {
+  width: 92%;
+  max-width: 600px;
+  background: var(--card);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px var(--shadow);
+  margin-bottom: 15px;
+  animation: fadeInCard 0.4s ease;
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------------------------------------
+   PERFECT BACK BUTTON (Light + Dark Mode)
+--------------------------------------------------------- */
+.back-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  /* Perfect left alignment */
+  margin-left: -6px;
+  padding: 8px 12px;
+  margin-bottom: 18px;
+
+  /* Floating background */
+  background: rgba(255,255,255,0.75);
+  border-radius: 12px;
+
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+  transition: 0.25s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+  transform: translateX(-2px);
+}
+
+body.dark .back-btn {
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.55);
+}
+
+/* Icon */
+.back-icon {
+  font-size: 20px;
+  opacity: 0.9;
+}
+body.dark .back-icon {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------
+   PAGE TITLE
+--------------------------------------------------------- */
+.request-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+.title-icon {
+  color: var(--primary);
+}
+
+/* ---------------------------------------------------------
+   TABS
+--------------------------------------------------------- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(108,99,255,0.12);
+  color: var(--text);
+  transition: 0.2s ease;
+}
+
+.tab.active {
+  background: linear-gradient(90deg, var(--primary), var(--primary2));
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(75,107,255,0.22);
+}
+
+/* ---------------------------------------------------------
+   LIST WRAPPER
+--------------------------------------------------------- */
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 8px;
+}
+
+.empty-text {
+  text-align: center;
+  color: #777;
+  padding: 20px 0;
+  font-size: 0.95rem;
+}
+
+body.dark .empty-text {
+  color: #bbb;
+}
+
+/* ---------------------------------------------------------
+   REQUEST CARD
+--------------------------------------------------------- */
+.request-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  padding: 16px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: 0.25s ease;
+}
+
+.request-card:active {
+  transform: scale(0.98);
+}
+
+.request-card img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(108,99,255,0.2);
+}
+
+/* ---------------------------------------------------------
+   USER INFO
+--------------------------------------------------------- */
+.request-info h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.request-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+body.dark .request-info p {
+  color: #bdbdbd;
+}
+
+/* ---------------------------------------------------------
+   ACTION BUTTONS
+--------------------------------------------------------- */
+.action-btns {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+/* Accept */
+.accept-btn {
+  background: linear-gradient(90deg, var(--primary), var(--primary2));
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 16px rgba(75,107,255,0.25);
+}
+
+/* Decline */
+.decline-btn {
+  background: var(--danger);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 16px rgba(255,77,79,0.25);
+}
+
+/* Cancel */
+.cancel-btn {
+  background: transparent;
+  border: 2px solid rgba(108,99,255,0.25);
+  color: var(--text);
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   LOADER
+--------------------------------------------------------- */
+.loader-wrap {
+  margin-top: 140px;
+  text-align: center;
+}
+
+.loader-circle {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #dcdcfc;
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loader-wrap p {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--text);
+}
+/* ---------------------------------------------------------
+   INNER REQUEST LOADING (For incoming/sent tabs)
+--------------------------------------------------------- */
+.request-inner-loader {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInInner 0.25s ease;
+}
+
+@keyframes fadeInInner {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.request-inner-circle {
+  width: 36px;
+  height: 36px;
+  border: 4px solid rgba(150,150,255,0.18);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spinInner 0.8s linear infinite;
+}
+
+@keyframes spinInner {
+  to { transform: rotate(360deg); }
+}
+
+.request-inner-loader p {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+/* ======================================================
+   ⭐ FIX LONG USERNAMES (Ellipsis + No Layout Break)
+====================================================== */
+
+.request-info {
+  min-width: 0;    /* allows ellipsis to work */
+  flex: 1;
+}
+
+.request-info h3,
+.request-info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+
+/* Strong visibility & theme support */
+.request-info h3 {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.request-info p {
+  color: #777;
+}
+
+body.dark .request-info p {
+  color: #bdbdbd;
+}
+

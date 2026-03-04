@@ -1,0 +1,55 @@
+.pc-warning-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  pointer-events: all;
+  user-select: none;
+  cursor: not-allowed;
+}
+
+.pc-warning-box {
+  max-width: 500px;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.pc-warning-box h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.pc-warning-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .pc-warning-box {
+    padding: 30px 20px;
+  }
+
+  .pc-warning-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .pc-warning-box p {
+    font-size: 1rem;
+  }
+}
