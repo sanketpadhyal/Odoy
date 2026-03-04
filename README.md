@@ -89,12 +89,14 @@ Create an account and add me — **@sanket**
 
 ## 🌍 Open Source
 
-Odoy is now **open source**. Anyone can use it, study the code, improve it, or build new features on top of it.
+Odoy has been **intentionally open sourced** so developers can explore how the platform works, learn from the architecture, and contribute improvements.
 
-You are welcome to contribute and help improve the project.
+All necessary files are included in this repository, including configuration files such as **firebase.js**, so developers can understand how the real-time system, authentication, and database integration work.
+
+You are free to study the code, modify it, improve it, and build new ideas on top of it.
 
 Currently, one known issue is the **session token management on session pages**, which is not fully fixed yet.  
-I have intentionally left this part open so contributors can help improve it.
+This part has been intentionally left open so contributors can explore and improve the implementation.
 
 I will also be working on fixing it in the coming week.
 
