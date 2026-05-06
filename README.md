@@ -1,6 +1,6 @@
 ## ODOY  
 <a href="https://www.odoy.in">
-    <img src="./logo.png" alt="ODOY LOGO" width="55" />
+    <img src="./logo.png" alt="ODOY LOGO" width="56" />
 </a>
 
 ---
